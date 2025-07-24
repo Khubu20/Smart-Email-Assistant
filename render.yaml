@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: smart-email-sb
-    env: java
-    buildCommand: cd email-writer-sb && ./mvnw clean install
-    startCommand: java -jar email-writer-sb/target/*.jar
-    envVars:
-      - key: JAVA_HOME
-        value: /opt/render/project/.jdk
